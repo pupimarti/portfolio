@@ -146,26 +146,26 @@ a{
     box-shadow: 0 1px 1px 1px #313131;
 }
 
-.proyect-links .github:hover{
-    filter: invert(0);
-    cursor: pointer;
-}
 
 
-.proyect .web:hover{
-    filter: invert();
-}
 
 @media screen and (min-width:765px){
     .proyect{
         max-width: 80%;
         margin-right:auto;
         margin-left: auto;
-        display: flex;
+        display: flex !important;
     }
     .proyect-logo-content, .proyect-info-content{
         width: 50%;
         height: 350px;
+    }
+    .proyect-links .github:hover{
+        filter: invert(0);
+        cursor: pointer;
+    }
+    .proyect .web:hover{
+        filter: invert();
     }
 }
 
@@ -222,11 +222,28 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     max-width: 80%;
     box-sizing: border-box;
     text-align: center;
+    background-color: #0a0606;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23ffffff' fill-opacity='0.22' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 .slick-prev:before, .slick-next:before {
     color: black !important;
 }
+
+.other-proyect{
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+
+.other-proyect .proyect-logo{
+    max-width: 100%;
+}
+
+.other-proyect .proyect-links, .other-proyect .proyect-links-only{
+    margin: 5px 0;
+}
+
+
 
 .footer{
     height: 100px;
