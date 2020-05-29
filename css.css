@@ -88,6 +88,7 @@ a{
     box-sizing: border-box;
     width: 100%;
     margin-top: 2.7777777777777777rem;
+    box-shadow: 0 0 35px rgba(0, 0, 0, .4);
 }
 
 .proyect-logo-content, .proyect-info-content{
@@ -224,6 +225,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     text-align: center;
     background-color: #0a0606;
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23ffffff' fill-opacity='0.22' fill-rule='evenodd'/%3E%3C/svg%3E");
+    
+    box-shadow: 0 0 35px rgba(0, 0, 0, .4);
 }
 
 .slick-prev:before, .slick-next:before {
@@ -233,6 +236,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .other-proyect{
     margin: 0 !important;
     max-width: 100% !important;
+}
+
+.other-proyect a{
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .other-proyect .proyect-logo{
