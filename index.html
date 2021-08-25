@@ -12,7 +12,8 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css.css" />
+    <link rel="stylesheet" href="css/css.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
     <link
       rel="stylesheet"
@@ -23,8 +24,8 @@
   </head>
   <body>
     <div class="container">
-      <header class="content-header">
-        <div class="header">
+      <header class="content-header" data-aos="fade-down" data-aos-duration="1500">
+        <div class="header" >
           <h1 class="title">Juan Martí</h1>
           <p class="desc">
             ¡Hola! Soy desarrollador front-end. Estos son algunos de mis
@@ -64,7 +65,7 @@
         </div>
       </header>
 
-      <div class="proyect proyect-sumar">
+      <div class="proyect proyect-sumar" data-aos="fade-up" data-aos-duration="1500">
         <div class="proyect-logo-content">
           <img src="assets/sumar.svg" class="proyect-logo" alt="sum-ar" />
         </div>
@@ -76,7 +77,9 @@
           />
         </div>
         <div class="proyect-info-content">
-          <h3 class="proyect-title">Progressive Web Apps de puntos y premios</h3>
+          <h3 class="proyect-title">
+            Progressive Web Apps de puntos y premios
+          </h3>
           <p class="proyect-desc">ReactJS + Firebase</p>
           <div class="proyect-links-only">
             <a
@@ -93,7 +96,7 @@
         </div>
       </div>
 
-      <div class="proyect proyect-drppn">
+      <div class="proyect proyect-drppn" data-aos="fade-up" data-aos-duration="1500">
         <div class="proyect-logo-content">
           <img src="assets/drppn.png" class="proyect-logo" alt="pupigram" />
         </div>
@@ -122,9 +125,13 @@
         </div>
       </div>
 
-      <div class="proyect proyect-forestal">
+      <div class="proyect proyect-forestal" data-aos="fade-up" data-aos-duration="1500">
         <div class="proyect-logo-content">
-          <img src="assets/logo-forestal.png" class="proyect-logo" alt="pupigram" />
+          <img
+            src="assets/logo-forestal.png"
+            class="proyect-logo"
+            alt="pupigram"
+          />
         </div>
         <!-- <div class="proyect-container-images-slick">
           <img
@@ -138,7 +145,7 @@
             class="image-proyect thumbnails"
           />
         </div> -->
-        
+
         <div class="proyect-container-gif">
           <img
             src="assets/forestal-2.jpg"
@@ -147,13 +154,15 @@
           />
         </div>
         <div class="proyect-info-content">
-          <h3 class="proyect-title">Progressive Web App generadora de remitos</h3>
+          <h3 class="proyect-title">
+            Progressive Web App generadora de remitos
+          </h3>
           <p class="proyect-desc">ReactJS + Firebase</p>
           <p class="proyect-client">Cliente CREADORA DIGITAL</p>
         </div>
       </div>
 
-      <div class="proyect proyect-pupigram">
+      <div class="proyect proyect-pupigram" data-aos="fade-up" data-aos-duration="1500">
         <div class="proyect-logo-content">
           <img src="assets/pupig.png" class="proyect-logo" alt="pupigram" />
         </div>
@@ -194,7 +203,7 @@
           <p class="proyect-client">Proyecto personal</p>
         </div>
       </div>
-<!-- 
+      <!-- 
       <div class="proyect proyect-juantsapp">
         <div class="proyect-logo-content">
           <img src="assets/juantsapp.png" class="proyect-logo" alt="pupigram" />
@@ -229,9 +238,9 @@
         </div>
       </div> -->
 
-      <h3 class="other">Otros proyectos personales</h3>
+      <h3 class="other" data-aos="fade-up" data-aos-duration="1500">Otros proyectos personales</h3>
 
-      <div class="content-other-projects">
+      <div class="content-other-projects" data-aos="fade-up" data-aos-duration="1500">
         <div class="proyect other-proyect">
           <a
             href="https://admin-tareas.netlify.com/"
@@ -382,6 +391,7 @@
       <footer class="footer"></footer>
     </div>
     <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/aos.js"></script>
     <script
       src="./slick/slick.js"
       type="text/javascript"
@@ -397,6 +407,7 @@
         $(".content-other-projects").slick();
         /* $(".proyect-container-images-slick").slick(); */
         $("img.thumbnails").fullscreenimage();
+        AOS.init({duration: 1000});
       });
     </script>
   </body>
